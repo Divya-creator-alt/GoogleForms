@@ -1,0 +1,125 @@
+<html>
+<head>
+  <title>Google</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f0fa;
+      margin: 0;
+      padding: 30px;
+    }
+
+    .form-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #5e35b1;
+    }
+
+    form {
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="date"],
+    input[type="time"],
+    input[type="file"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .checkbox-group label,
+    .radio-group label {
+      font-weight: normal;
+    }
+
+    .checkbox-group input,
+    .radio-group input {
+      margin-right: 5px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 10px 20px;
+      background-color: #5e35b1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #4527a0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>Registration Form</h2>
+
+    <form>
+      <label>Name:</label>
+      <input type="text" placeholder="Enter your name">
+
+      <label>Email:</label>
+      <input type="email" placeholder="Enter your email">
+
+      <label>Password:</label>
+      <input type="password" placeholder="Enter password">
+
+      <label>Age:</label>
+      <input type="number">
+
+      <label>Date of Birth:</label>
+      <input type="date">
+
+       <!-- <label>Select Time:</label>
+      <input type="time"> -->
+      <label>Hobbies:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Reading</label>
+        <label><input type="checkbox"> Traveling</label>
+        <label><input type="checkbox"> Music</label>
+      </div>
+
+      <label>Gender:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+      </div>
+
+      <label>Upload Resume:</label>
+      <input type="file">
+
+      <input type="hidden" name="user_id" value="12345">
+
+      <br>
+      <input type="submit" value="Register">
+      <input type="reset" value="Clear Form">
+    </form>
+  </div>
+
+</body>
+</html> 
